@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="congruentX" constructor="ColumnChartComponent" version="0.0.7" display-name-key="ColumnChartComponent" description-key="ColumnChartComponent description" control-type="standard">
+    <external-service-usage enabled="false"></external-service-usage>
+  
+    <property name="Items" display-name-key="Items" description-key="Items" of-type="SingleLine.Text" usage="bound" required="true" />
+    
+    <property name="CustomHeight" display-name-key="CustomHeight" description-key="CustomHeight" of-type="Whole.None" usage="bound" required="true" />
+    <property name="CustomWidth" display-name-key="CustomWidth" description-key="CustomWidth" of-type="Whole.None" usage="bound" required="true"  />
+    <property name="CustomColor" display-name-key="CustomColor" description-key="CustomColor" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
